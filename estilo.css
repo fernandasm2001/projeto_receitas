@@ -10,3 +10,12 @@
 #botaoMargem{
     margin-left: 160px;
 }
+
+.fs-7{
+    font-size: small;
+}
+
+.card-text{
+    height: 75px;
+    overflow: hidden;
+}
