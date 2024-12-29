@@ -1,6 +1,7 @@
 #home {
     background-color: #0d6efd;
     color: white;
+    padding-top:60px ;
 }
 
 #icones {
@@ -19,3 +20,10 @@
     height: 75px;
     overflow: hidden;
 }
+
+.centralizar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
