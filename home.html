@@ -3,7 +3,7 @@
 
     <head>
 
-        <meta charset="UTF-8">
+        <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <title>Home</title>
@@ -15,107 +15,116 @@
      
     </head>
 
-    <body>
+    <body class="cor3">
 
-        <header>
-            <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+        <header id="cabecalho">
+            <nav class="navbar navbar-expand-lg navbar-light cor1 fixed-top">
                 <div class="container-fluid">
 
                     <a href="#" class="navbar-brand">
                         <h2>LOGO</h2>
                     </a>
 
-                    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar" type="button" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#navbar" type="button" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon" ></span>
                     </button>
 
-                    <div class="collapse navbar-collapse" id="navbar">
-                        
-                        <ul class="navbar-nav me-auto">
-    
-                            <li class="nav-item">
-                                <a href="#" class="nav-link active" aria-current="page">Home</a>
-                            </li>
-    
-                            <li class="nav-item">
-                                <a href="#" class="nav-link">Segundo link</a>
-                            </li>
-    
-                            <li class="nav-item">
-                                <a href="#" class="nav-link">Terceiro link</a>
-                            </li>
-    
-                            <li class="nav-item">
-                                <a href="#" class="nav-link">Quarto link</a>
-                            </li>
-    
-                        </ul>
+                    <div class="offcanvas offcanvas-end text-bg-secondary" tabindex="-1" id="navbar" aria-labelledby="offcanvasNavbarLabel">
 
-                        <form class="d-flex" role="search">
-                            <input type="search" placeholder="Pesquise" class="form-control me-2">
-                            <button class="btn btn-light" type="submit">
-                                <a href="">
-                                    <i class="fa-solid fa-magnifying-glass"></i>
-                                </a>
-                            </button>
-                            <button class="btn btn-light me-2 ms-4">Login</button>
-                        </form>
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+
+                        <div class="offcanvas-body">
+
+                            <ul class="navbar-nav justify-content-start flex-grow-1 pe-3">
+    
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link active" aria-current="page">Home</a>
+                                </li>
+        
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">Segundo link</a>
+                                </li>
+        
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">Terceiro link</a>
+                                </li>
+        
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">Quarto link</a>
+                                </li>
+        
+                            </ul>
+
+    
+                            <form class="d-flex" role="search">
+                                <input type="search" placeholder="Pesquise" class="form-control me-2">
+                                <button class="btn btn-light" type="submit">
+                                    <a href="" id="lupa">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </a>
+                                </button>
+
+                                
+
+    
+                                <button type="button" class="btn btn-light ms-3">
+                                    Login
+                                </button>
+    
+                            </form>
+
+                        </div>
                        
                     </div>
 
                 </div>
-
-                
             </nav>
         </header>
 
-        <section id="home">
-
+        <section id="home" class="d-none d-lg-block cor2">
             <div class="container">
-
                 <div id="courouselHome" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
 
-                            <div class="row w-100">
+                                <div class="row">
 
-                                <div class="col-6">
-                                    <img src="imagens/img_home_1.png">
-                                </div>
-            
-                                <div class="col-6 d-flex">
-            
-                                    <div class="align-self-center">
-                                        <h1 class="display-4">Aqui tem todas as receitas que você pode querer</h1>
-                                        
+                                    <div class="col-lg-6 d-none d-lg-block">
+                                        <img src="imagens/img_home_1.png">
                                     </div>
-            
+                
+                                    <div class="col-lg-6 d-flex">
+                
+                                        <div class="align-self-center">
+                                            <h1 class="display-4">Aqui tem todas as receitas que você pode querer</h1>
+                                        </div>
+                
+                                    </div>
+                
                                 </div>
-            
-                            </div>
 
                         </div>
 
                         <div class="carousel-item">
-                            <div class="row w-100">
+                            <div class="row">
 
-                                <div class="col-6">
+                                <div class="col-lg-6 d-none d-lg-block">
                                     <img src="imagens/img_home_2.png">
                                 </div>
             
-                                <div class="col-6 d-flex">
+                                <div class="col-lg-6 d-flex">
             
                                     <div class="align-self-center">
                                         <h1 class="display-4">Salve receitas e acompanhe novidades</h1>
 
-                                      
-
                                         <div class="mt-4">
                                            
-                                            <button type="button" id="botaoMargem" class="btn btn-light btn-lg col-4">Cadastre-se</button>
-                                         
+                                            <button type="button" id="botaoMargem" class="btn btn-light btn-lg col-4 mb-4">Cadastre-se</button>
+                                            
                                         </div>
-
                                         
                                     </div>
             
@@ -125,25 +134,25 @@
                         </div>
 
                         <div class="carousel-item">
-                            <div class="row w-100">
+                            <div class="row">
 
-                                <div class="col-6">
+                                <div class="col-lg-6 d-none d-lg-block">
                                     <img src="imagens/img_home_3.png">
                                 </div>
             
-                                <div class="col-6 d-flex">
+                                <div class="col-lg-6 d-flex">
             
                                     <div class="align-self-center">
                                         <h1 class="display-4">Siga-nos em nossas redes</h1>
-                                        <div id="icones" class="mt-4">
+                                        <div id="icones" class="mt-4 mb-4 centralizar">
 
-                                            <a href="" class="btn btn-md btn-outline-light">
+                                            <a href="" class="btn btn-md btn-light me-2">
                                                 <i class="fa-brands fa-instagram"></i>
                                             </a>
-                                            <a href="" class="btn btn-md btn-outline-light">
+                                            <a href="" class="btn btn-md btn-light me-2">
                                                 <i class="fa-brands fa-youtube"></i>
                                             </a>
-                                            <a href="" class="btn btn-md btn-outline-light">
+                                            <a href="" class="btn btn-md btn-light me-2">
                                                 <i class="fa-brands fa-facebook"></i>
                                             </a>
 
@@ -155,9 +164,8 @@
             
                             </div>
                         </div>
-                    </div>
 
-                    <div></div>
+                    </div>
 
                 </div>
 
@@ -165,13 +173,16 @@
 
         </section>
 
-        <section id="conteudo" class="mt-4">
+        <section id="espacamento" class="d-none d-lg-block">
+        </section>
+
+        <section id="conteudo">
 
             <div class="container">
 
                 <div class="row">
 
-                    <div class="col-4">
+                    <div class="col-12 col-sm-6 col-md-4">
 
                         <div class="card">
     
@@ -179,21 +190,21 @@
                             <div class="card-body">
     
                                 <h5 class="card-title">Peru Natalino</h5>
-                                <p class="card-text">
+                                <p class="card-text receitas">
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel mauris ac dolor vulputate tristique vitae quis nisi. Aliquam in.
                                 </p>
                                 <p class="text-secondary fs-7">
                                     <i class="fa-regular fa-clock"></i>
                                     Tempo de preparo: 3h
                                 </p>
-                                <a href="" class="btn btn-small btn-primary">Saiba mais</a>
+                                <a href="" class="btn btn-small cor2">Saiba mais</a>
                             </div>
     
                         </div>
     
                     </div>
     
-                    <div class="col-4">
+                    <div class="col-12 col-sm-6 col-md-4">
     
                         <div class="card">
     
@@ -201,21 +212,21 @@
                             <div class="card-body">
     
                                 <h5 class="card-title">Bolo Com Creme</h5>
-                                <p class="card-text">
+                                <p class="card-text receitas">
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel mauris ac dolor vulputate tristique vitae quis nisi. Aliquam in.
                                 </p>
                                 <p class="text-secondary fs-7 ">
                                     <i class="fa-regular fa-clock"></i>
                                     Tempo de preparo: 3h
                                 </p>
-                                <a href="" class="btn btn-small btn-primary">Saiba mais</a>
+                                <a href="" class="btn btn-small cor2">Saiba mais</a>
                             </div>
     
                         </div>
     
                     </div>
     
-                    <div class="col-4">
+                    <div class="col-12 col-sm-6 col-md-4">
     
                         <div class="card">
     
@@ -223,33 +234,25 @@
                             <div class="card-body">
     
                                 <h5 class="card-title">Café Com Canela</h5>
-                                <p class="card-text">
+                                <p class="card-text receitas">
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel mauris ac dolor vulputate tristique vitae quis nisi. Aliquam in.
                                 </p>
                                 <p class="text-secondary fs-7">
                                     <i class="fa-regular fa-clock"></i>
                                     Tempo de preparo: 3h
                                 </p>
-                                <a href="" class="btn btn-small btn-primary">Saiba mais</a>
+                                <a href="" class="btn btn-small cor2">Saiba mais</a>
                             </div>
     
                         </div>
     
                     </div>
 
-                </div>  
+                </div>
                 
-            </div>
+                <div class="row ">
 
-        </section>
-
-        <section id="conteudoLinha2" class="mt-4">
-
-            <div class="container">
-
-                <div class="row">
-
-                    <div class="col-3">
+                    <div class="col-6 col-md-3">
 
                         <div class="card">
     
@@ -257,14 +260,14 @@
                             <div class="card-body">
     
                                 <h5 class="card-title">Docinho de Morango</h5>
-                                <p class="card-text">
+                                <p class="card-text receitas">
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel mauris ac dolor vulputate tristique vitae quis nisi. Aliquam in.
                                 </p>
                                 <div>
                                     <p class="text-secondary fs-7">
                                         <i class="fa-regular fa-clock"></i>
                                         Tempo de preparo: 3h</p>
-                                    <a href="" class="btn btn-small btn-primary">Saiba mais</a>
+                                    <a href="" class="btn btn-small cor2">Saiba mais</a>
                                 </div>
                             </div>
     
@@ -272,7 +275,7 @@
     
                     </div>
     
-                    <div class="col-3">
+                    <div class="col-6 col-md-3">
     
                         <div class="card">
     
@@ -280,13 +283,13 @@
                             <div class="card-body">
     
                                 <h5 class="card-title">Macarrão Com Camarão</h5>
-                                <p class="card-text">
+                                <p class="card-text receitas">
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel mauris ac dolor vulputate tristique vitae quis nisi. Aliquam in.
                                 </p>
                                 <p class="text-secondary fs-7">
                                     <i class="fa-regular fa-clock"></i>
                                     Tempo de preparo: 3h</p>
-                                <a href="" class="btn btn-small btn-primary">Saiba mais</a>
+                                <a href="" class="btn btn-small cor2">Saiba mais</a>
 
                             </div>
     
@@ -294,7 +297,7 @@
     
                     </div>
     
-                    <div class="col-3">
+                    <div class="col-6 col-md-3">
     
                         <div class="card">
     
@@ -302,13 +305,13 @@
                             <div class="card-body">
     
                                 <h5 class="card-title">Panquecas Americanas</h5>
-                                <p class="card-text">
+                                <p class="card-text receitas">
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel mauris ac dolor vulputate tristique vitae quis nisi. Aliquam in.
                                 </p>
                                 <p class="text-secondary fs-7">
                                     <i class="fa-regular fa-clock"></i>
                                     Tempo de preparo: 3h</p>
-                                <a href="" class="btn btn-small btn-primary">Saiba mais</a>
+                                <a href="" class="btn btn-small cor2">Saiba mais</a>
 
                             </div>
     
@@ -316,7 +319,7 @@
     
                     </div>
 
-                    <div class="col-3">
+                    <div class="col-6 col-md-3">
     
                         <div class="card">
     
@@ -324,14 +327,14 @@
                             <div class="card-body">
     
                                 <h5 class="card-title">Pizza Quatro Queijos</h5>
-                                <p class="card-text">
+                                <p class="card-text receitas">
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel mauris ac dolor vulputate tristique vitae quis nisi. Aliquam in.
                                 </p>
                                 <p class="text-secondary fs-7">
                                     <i class="fa-regular fa-clock"></i>
                                     Tempo de preparo: 3h
                                 </p>
-                                <a href="" class="btn btn-small btn-primary">Saiba mais</a>
+                                <a href="" class="btn btn-small cor2">Saiba mais</a>
                             </div>
     
                         </div>
@@ -340,23 +343,143 @@
 
                 </div>
 
-                
+                <div class="centralizar">
+
+                    <button class="mt-4 btn cor2">
+                        Mais Receitas
+                    </button>
+    
+                </div>
                 
             </div>
 
         </section>
 
-        <section id="conteudoLinha3">
-            <div class="container centralizar">
+        <section id="noticias mt-4">
+            <div class="container">
+                <h2 class="display-6">Ultimas Noticias</h1>
+                <div class="row">
 
-                <button class="mt-4 btn btn-primary">
-                    Mais Receitas
-                </button>
+                    <div class="col-6 parallax">
+
+                        <div class="card">
+
+                            <img src="imagens/azeite.jpg" alt="">
+
+                            <div class="card-body">
+                                <h4 class="card-title">Os beneficios do azeite para sua saúde</h4>
+                                <div class="noticia">
+
+                                    <p class="card-text">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus aliquet ipsum nec felis malesuada, et ornare purus tristique. Nam arcu dui, mattis nec nisi ac, pulvinar tempor purus. Donec quis tincidunt mi. Pellentesque vitae dolor elementum, maximus sapien et, accumsan elit. Aenean fringilla nisl nisi, at blandit urna vehicula pellentesque. In quis urna consectetur, convallis lacus vel, tempus dolor. Aenean vestibulum, neque vel suscipit suscipit, felis dui porttitor est, sit amet blandit ligula velit vel lorem. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur nibh mi, malesuada nec sodales quis, ullamcorper et nisi. Vestibulum lacus velit, imperdiet non vestibulum quis, pharetra a odio. Quisque elementum pharetra massa id aliquet. Sed accumsan in dui tempus vehicula. Ut nec mollis urna. Suspendisse bibendum purus lacus, vitae facilisis lectus aliquet eget.
+                                    </p>
+                                    <p class="card-text">
+                                        Nulla facilisi. In vitae mi gravida augue auctor viverra a nec risus. Nam mi mauris, ultrices id urna eleifend, pharetra blandit lorem. Phasellus dignissim diam quis mi pulvinar rutrum. Proin et felis non ligula euismod ullamcorper. Sed leo magna, finibus quis dui vel, consectetur ullamcorper urna. Vivamus finibus odio in pulvinar lacinia. Aliquam auctor luctus nulla et feugiat.
+                                    </p>
+                                    <p class="card-text">
+                                        Cras non molestie velit, vel feugiat diam. Maecenas tempor urna vitae malesuada porttitor. Maecenas eu consectetur neque. Integer condimentum mauris eu nulla fermentum, a lacinia augue egestas. Aliquam nec mi ultrices, condimentum diam sit amet, blandit ex. Nunc pellentesque ex sed quam consectetur, venenatis pharetra nunc varius. Suspendisse potenti. Donec sed mi nec ligula gravida aliquet ac non ante. Proin lacinia urna tempus molestie tincidunt. Quisque accumsan mi sed aliquet ornare. Cras malesuada nunc eleifend ornare lobortis. Phasellus eget consequat diam, eget eleifend lectus. Donec tempor elementum magna, sit amet auctor sapien maximus eget. Sed quam elit, ornare sed vestibulum non, tincidunt non leo.
+                                    </p>
+
+                                    <p class="card-text">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus aliquet ipsum nec felis malesuada, et ornare purus tristique. Nam arcu dui, mattis nec nisi ac, pulvinar tempor purus. Donec quis tincidunt mi. Pellentesque vitae dolor elementum, maximus sapien et, accumsan elit. Aenean fringilla nisl nisi, at blandit urna vehicula pellentesque. In quis urna consectetur, convallis lacus vel, tempus dolor. Aenean vestibulum, neque vel suscipit suscipit, felis dui porttitor est, sit amet blandit ligula velit vel lorem. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur nibh mi, malesuada nec sodales quis, ullamcorper et nisi. Vestibulum lacus velit, imperdiet non vestibulum quis, pharetra a odio. Quisque elementum pharetra massa id aliquet. Sed accumsan in dui tempus vehicula. Ut nec mollis urna. Suspendisse bibendum purus lacus, vitae facilisis lectus aliquet eget.
+                                    </p>
+                                    <p class="card-text">
+                                        Nulla facilisi. In vitae mi gravida augue auctor viverra a nec risus. Nam mi mauris, ultrices id urna eleifend, pharetra blandit lorem. Phasellus dignissim diam quis mi pulvinar rutrum. Proin et felis non ligula euismod ullamcorper. Sed leo magna, finibus quis dui vel, consectetur ullamcorper urna. Vivamus finibus odio in pulvinar lacinia. Aliquam auctor luctus nulla et feugiat.
+                                    </p>
+                                    <p class="card-text">
+                                        Cras non molestie velit, vel feugiat diam. Maecenas tempor urna vitae malesuada porttitor. Maecenas eu consectetur neque. Integer condimentum mauris eu nulla fermentum, a lacinia augue egestas. Aliquam nec mi ultrices, condimentum diam sit amet, blandit ex. Nunc pellentesque ex sed quam consectetur, venenatis pharetra nunc varius. Suspendisse potenti. Donec sed mi nec ligula gravida aliquet ac non ante. Proin lacinia urna tempus molestie tincidunt. Quisque accumsan mi sed aliquet ornare. Cras malesuada nunc eleifend ornare lobortis. Phasellus eget consequat diam, eget eleifend lectus. Donec tempor elementum magna, sit amet auctor sapien maximus eget. Sed quam elit, ornare sed vestibulum non, tincidunt non leo.
+                                    </p>
+
+                                </div>
+                                <a href="#" class="btn cor2 mt-2">Saiba Mais</a>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-6">
+
+                        <div class="card">
+
+                            <img src="imagens/morangos.jpg" alt="">
+
+                            <div class="card-body">
+                                <h4 class="card-title">Os beneficios do azeite para sua saúde</h4>
+
+                                <div class="noticia">
+
+                                    <p class="card-text">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus aliquet ipsum nec felis malesuada, et ornare purus tristique. Nam arcu dui, mattis nec nisi ac, pulvinar tempor purus. Donec quis tincidunt mi. Pellentesque vitae dolor elementum, maximus sapien et, accumsan elit. Aenean fringilla nisl nisi, at blandit urna vehicula pellentesque. In quis urna consectetur, convallis lacus vel, tempus dolor. Aenean vestibulum, neque vel suscipit suscipit, felis dui porttitor est, sit amet blandit ligula velit vel lorem. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur nibh mi, malesuada nec sodales quis, ullamcorper et nisi. Vestibulum lacus velit, imperdiet non vestibulum quis, pharetra a odio. Quisque elementum pharetra massa id aliquet. Sed accumsan in dui tempus vehicula. Ut nec mollis urna. Suspendisse bibendum purus lacus, vitae facilisis lectus aliquet eget.
+                                    </p>
+                                    <p class="card-text">
+                                        Nulla facilisi. In vitae mi gravida augue auctor viverra a nec risus. Nam mi mauris, ultrices id urna eleifend, pharetra blandit lorem. Phasellus dignissim diam quis mi pulvinar rutrum. Proin et felis non ligula euismod ullamcorper. Sed leo magna, finibus quis dui vel, consectetur ullamcorper urna. Vivamus finibus odio in pulvinar lacinia. Aliquam auctor luctus nulla et feugiat.
+                                    </p>
+                                    <p class="card-text">
+                                        Cras non molestie velit, vel feugiat diam. Maecenas tempor urna vitae malesuada porttitor. Maecenas eu consectetur neque. Integer condimentum mauris eu nulla fermentum, a lacinia augue egestas. Aliquam nec mi ultrices, condimentum diam sit amet, blandit ex. Nunc pellentesque ex sed quam consectetur, venenatis pharetra nunc varius. Suspendisse potenti. Donec sed mi nec ligula gravida aliquet ac non ante. Proin lacinia urna tempus molestie tincidunt. Quisque accumsan mi sed aliquet ornare. Cras malesuada nunc eleifend ornare lobortis. Phasellus eget consequat diam, eget eleifend lectus. Donec tempor elementum magna, sit amet auctor sapien maximus eget. Sed quam elit, ornare sed vestibulum non, tincidunt non leo.
+                                    </p>
+
+                                    <p class="card-text">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus aliquet ipsum nec felis malesuada, et ornare purus tristique. Nam arcu dui, mattis nec nisi ac, pulvinar tempor purus. Donec quis tincidunt mi. Pellentesque vitae dolor elementum, maximus sapien et, accumsan elit. Aenean fringilla nisl nisi, at blandit urna vehicula pellentesque. In quis urna consectetur, convallis lacus vel, tempus dolor. Aenean vestibulum, neque vel suscipit suscipit, felis dui porttitor est, sit amet blandit ligula velit vel lorem. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur nibh mi, malesuada nec sodales quis, ullamcorper et nisi. Vestibulum lacus velit, imperdiet non vestibulum quis, pharetra a odio. Quisque elementum pharetra massa id aliquet. Sed accumsan in dui tempus vehicula. Ut nec mollis urna. Suspendisse bibendum purus lacus, vitae facilisis lectus aliquet eget.
+                                    </p>
+                                    <p class="card-text">
+                                        Nulla facilisi. In vitae mi gravida augue auctor viverra a nec risus. Nam mi mauris, ultrices id urna eleifend, pharetra blandit lorem. Phasellus dignissim diam quis mi pulvinar rutrum. Proin et felis non ligula euismod ullamcorper. Sed leo magna, finibus quis dui vel, consectetur ullamcorper urna. Vivamus finibus odio in pulvinar lacinia. Aliquam auctor luctus nulla et feugiat.
+                                    </p>
+                                    <p class="card-text">
+                                        Cras non molestie velit, vel feugiat diam. Maecenas tempor urna vitae malesuada porttitor. Maecenas eu consectetur neque. Integer condimentum mauris eu nulla fermentum, a lacinia augue egestas. Aliquam nec mi ultrices, condimentum diam sit amet, blandit ex. Nunc pellentesque ex sed quam consectetur, venenatis pharetra nunc varius. Suspendisse potenti. Donec sed mi nec ligula gravida aliquet ac non ante. Proin lacinia urna tempus molestie tincidunt. Quisque accumsan mi sed aliquet ornare. Cras malesuada nunc eleifend ornare lobortis. Phasellus eget consequat diam, eget eleifend lectus. Donec tempor elementum magna, sit amet auctor sapien maximus eget. Sed quam elit, ornare sed vestibulum non, tincidunt non leo.
+                                    </p>
+
+                                </div>
+
+                                <a href="#" class="btn cor2 mt-2">Saiba Mais</a>
+                                
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
 
             </div>
         </section>
 
-        <hr>
+        <footer class="mt-3 mb-2 ">
+
+            <div class="container mt-3">
+
+                <div class="row">
+
+                    <div class="col-12 col-md-8">
+                        <p id="linkRodape">
+                            <a href="#">Home</a>
+                            <a href="#">Segundo Link</a>
+                            <a href="#">Terceiro Link</a>
+                            <a href="#">Quarto Link</a>
+                        </p>
+                    </div>
+
+                    <div class="col-12 col-md-4 final">
+                        <p id="iconeRodape">
+
+                            <a href="" class="btn btn-md btn-outline-dark">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                            <a href="" class="btn btn-md btn-outline-dark">
+                                <i class="fa-brands fa-youtube"></i>
+                            </a>
+                            <a href="" class="btn btn-md btn-outline-dark">
+                                <i class="fa-brands fa-facebook"></i>
+                            </a>
+
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+            
+        </footer>
 
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>        

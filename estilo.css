@@ -1,23 +1,61 @@
+#cabecalho a h2, #cabecalho li a, #home h1{
+    color:#ffe4f6;
+}
+
 #home {
-    background-color: #0d6efd;
+    background-color: #994c6e;
     color: white;
     padding-top:60px ;
 }
 
-#icones {
-    margin-left: 220px;
+/*#0d6efd*/
+
+#lupa{
+    text-decoration: none;
+    color: black;
 }
 
-#botaoMargem{
-    margin-left: 160px;
+.cor1{
+    background-color: #994c6e;
+}
+
+.cor2{
+    background-color: #00c9bb;
+}
+
+.cor3{
+    background-color: #ffe4f6;;
+}
+
+#conteudo{
+margin-top: 66px;
+}
+
+#conteudo .row .card, #noticias .row .card{
+    margin-top: 24px;
+
+}
+
+#espacamento{
+    margin-top: -66px;
 }
 
 .fs-7{
     font-size: small;
 }
 
-.card-text{
+.card-title{
+    height: 26px;
+    overflow: hidden;
+}
+
+.receitas{
     height: 75px;
+    overflow: hidden;
+}
+
+.noticia{
+    height: 190px;
     overflow: hidden;
 }
 
@@ -26,4 +64,43 @@
     justify-content: center;
     align-items: center;
 }
+
+.final{
+    display: flex;
+    justify-content: end;
+}
+
+.final a{
+    margin-left: 5px;
+}
+
+.tamanhoMenor{
+    height: 170px;
+}
+
+.pn70 {
+
+    padding-top: -70px;
+}
+
+footer{
+    border-top: 1px solid #994c6e;
+    border-radius: 2px;
+}
+
+footer #linkRodape a{
+    margin-right: 15px;
+    text-decoration: none;
+    color: #994c6e;
+}
+
+footer #linkRodape a:hover {
+    color: #ba5c85;
+}
+
+header ul li a:hover{
+    font-size: 17px;
+}
+
+
 
